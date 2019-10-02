@@ -1,0 +1,87 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #d53369;
+  background: -webkit-linear-gradient(to right, #cbad6d, #d53369);
+  background: linear-gradient(to right, #cbad6d, #d53369);
+}
+#box {
+  padding: 0;
+  margin: auto;
+  margin-top: 5%;
+  width: 370px;
+  height: 400px;
+  background-color: #c9c5b5;
+  box-shadow: 0 0 3px#f7f0da;
+}
+#bar {
+  padding: 5px 10px 5px;
+  height: auto;
+  background-color: #971f9c;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: white;
+  width: 350px;
+}
+#bar h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+#add-btn {
+  float: right;
+}
+#new-todo {
+  /* design the input box beautifully */
+  box-sizing: border-box;
+  padding: 20px 10px 20px 10px;
+  width: 100%;
+  height: 35px;
+  font-size: 1.5em;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+/* choosing n th child of li */
+li:nth-child(2n) {
+  background-color: white;
+}
+li {
+  height: auto;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+#new-todo {
+  display: none;
+}
+.strike-through {
+  text-decoration: line-through;
+  color: grey;
+}
+span {
+  height: 18px;
+  margin-right: 10px;
+  text-align: center;
+  display: none;
+  animation-name: delete;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes delete {
+  50% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
